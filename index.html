@@ -1,1 +1,30 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MCQ App</title>
+</head>
+<body>
+
+<h2>MCQ Quiz</h2>
+
+<p>১. বাংলাদেশের রাজধানী কী?</p>
+
+<button onclick="check('A')">ঢাকা</button>
+<button onclick="check('B')">চট্টগ্রাম</button>
+
+<p id="result"></p>
+
+<script>
+function check(a){
+  if(a=="A"){
+    document.getElementById("result").innerHTML="✅ সঠিক উত্তর";
+  }else{
+    document.getElementById("result").innerHTML="❌ ভুল উত্তর";
+  }
+}
+</script>
+
+</body>
+</html>
